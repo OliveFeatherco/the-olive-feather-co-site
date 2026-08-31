@@ -2,7 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="The Olive Feather Co. creates one-of-a-kind handcrafted jewelry in Oregon using brass, copper, natural stones, and traditional metalsmithing techniques."
+  >
 
   <title>The Olive Feather Co.</title>
 
@@ -15,6 +24,7 @@
       --charcoal: #2E2E2E;
       --terracotta: #C46F4A;
       --paper: #FFFDF8;
+      --border: #DDD5C7;
     }
 
     * {
@@ -23,6 +33,7 @@
 
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     body {
@@ -31,10 +42,194 @@
       color: var(--charcoal);
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
     }
 
     a {
       color: inherit;
+    }
+
+    nav {
+      background: var(--paper);
+      padding: 24px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-size: 1.35rem;
+      letter-spacing: 3px;
+      margin-bottom: 13px;
+      line-height: 1.25;
+    }
+
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.72rem;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: var(--olive);
+    }
+
+    .hero {
+      background: var(--olive);
+      color: white;
+      min-height: 68vh;
+      display: flex;
+      align-items: center;
+      padding: 72px 8%;
+      width: 100%;
+    }
+
+    .hero-content {
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      margin: 0 0 26px;
+      max-width: 680px;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      font-weight: normal;
+      line-height: 1.06;
+      overflow-wrap: break-word;
+    }
+
+    .hero h1 em {
+      font-weight: normal;
+    }
+
+    .hero p {
+      max-width: 560px;
+      font-size: 1.08rem;
+      margin: 0 0 28px;
+    }
+
+    .hero .location {
+      margin-top: 28px;
+      margin-bottom: 0;
+      font-size: 0.82rem;
+      letter-spacing: 1.5px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid currentColor;
+      padding: 13px 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.72rem;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--brass);
+      border-color: var(--brass);
+      color: white;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 22px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: normal;
+      line-height: 1.15;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .intro p {
+      font-size: 1.02rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 45px;
+    }
+
+    .feature {
+      padding: 20px;
+    }
+
+    .feature h3 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.86rem;
+      color: var(--olive);
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .feature p {
+      margin-bottom: 0;
+    }
+
+    .products {
+      background: var(--paper);
+    }
+
+    .section-heading {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1200px;
+      margin: 38px auto 0;
+    }
+
+    .product {
+      background: var(--cream);
+      padding-bottom: 26px;
+      text-align: center;
+      border: 1px solid rgba(46, 46, 46, 0.08);
+    }
+
+    .photo-placeholder {
+      aspect-ratio: 1 / 1;
+      background: var(--sage);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.72rem;
+    }
+
+    .product h      color: inherit;
     }
 
     nav {

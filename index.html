@@ -99,7 +99,7 @@
     }
 
     .hero h1 {
-      margin: 0 0 26px;
+      margin: 0 auto 26px;
       max-width: 680px;
       font-size: clamp(2.4rem, 6vw, 4.8rem);
       font-weight: normal;
@@ -114,14 +114,7 @@
     .hero p {
       max-width: 560px;
       font-size: 1.08rem;
-      margin: 0 auto 28px;
-    }
-
-    .hero .location {
-      margin-top: 28px;
-      margin-bottom: 0;
-      font-size: 0.82rem;
-      letter-spacing: 1.5px;
+      margin: 28px auto 0;
     }
 
     .button {
@@ -133,6 +126,7 @@
       letter-spacing: 2px;
       font-size: 0.72rem;
       transition: 0.2s ease;
+      margin-top: 5px;
     }
 
     .button:hover {
@@ -198,11 +192,6 @@
       background: var(--paper);
     }
 
-    .section-heading {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
     .product-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -231,136 +220,10 @@
       font-size: 0.72rem;
     }
 
-    .product h      color: inherit;
-    }
-
-    nav {
-      background: var(--paper);
-      padding: 22px 18px;
-      text-align: center;
-      border-bottom: 1px solid #ddd5c7;
-    }
-
-    .brand {
-      font-size: 1.25rem;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    nav a {
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.72rem;
-      margin: 0 8px;
-    }
-
-    .hero {
-      background: var(--olive);
-      color: white;
-      min-height: 68vh;
-      display: flex;
-      align-items: center;
-      padding: 70px 8%;
-    }
-
-    .hero-content {
-      max-width: 650px;
-    }
-
-    .hero h1 {
-      margin: 0 0 24px;
-      font-size: clamp(2.6rem, 8vw, 5rem);
-      font-weight: normal;
-      line-height: 1.05;
-    }
-
-    .hero p {
-      max-width: 520px;
-      font-size: 1.05rem;
-      margin-bottom: 28px;
-    }
-
-    .button {
-      display: inline-block;
-      text-decoration: none;
-      border: 1px solid currentColor;
-      padding: 12px 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.72rem;
-      margin-top: 5px;
-    }
-
-    section {
-      padding: 65px 8%;
-    }
-
-    h2 {
-      margin-top: 0;
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: normal;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    .intro {
-      max-width: 720px;
-      margin: auto;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      margin-top: 40px;
-    }
-
-    .feature {
-      padding: 18px;
-    }
-
-    .feature h3 {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.85rem;
-      color: var(--olive);
-    }
-
-    .products {
-      background: var(--paper);
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 35px;
-    }
-
-    .product {
-      background: var(--cream);
-      padding-bottom: 24px;
-      text-align: center;
-    }
-
-    .photo-placeholder {
-      aspect-ratio: 1 / 1;
-      background: var(--sage);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.72rem;
-    }
-
     .product h3 {
       margin: 18px 10px 5px;
       font-size: 1.1rem;
+      color: inherit;
     }
 
     .product p {
@@ -400,12 +263,62 @@
       background: var(--paper);
       text-align: center;
       padding: 40px 20px;
-      border-top: 1px solid #ddd5c7;
+      border-top: 1px solid var(--border);
     }
 
     footer .name {
       letter-spacing: 2px;
       font-size: 1rem;
+    }
+
+    /* WORK IN PROGRESS POPUP */
+
+    .wip-popup {
+      position: fixed;
+      inset: 0;
+      background: rgba(46, 46, 46, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+
+    .wip-box {
+      background: var(--paper);
+      color: var(--charcoal);
+      max-width: 420px;
+      width: 100%;
+      padding: 32px 28px;
+      border-radius: 14px;
+      position: relative;
+      text-align: center;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+    }
+
+    .wip-box h3 {
+      margin: 0 0 12px;
+      color: var(--olive);
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+
+    .wip-box p {
+      margin-bottom: 0;
+    }
+
+    .wip-close {
+      position: absolute;
+      top: 8px;
+      right: 14px;
+      background: none;
+      border: 0;
+      color: var(--charcoal);
+      font-family: inherit;
+      font-size: 28px;
+      line-height: 1;
+      cursor: pointer;
     }
 
     @media (max-width: 700px) {
@@ -428,6 +341,30 @@
 
 <body>
 
+  <!-- WORK IN PROGRESS POPUP -->
+
+  <div id="wip-popup" class="wip-popup">
+    <div class="wip-box">
+
+      <button
+        class="wip-close"
+        type="button"
+        onclick="document.getElementById('wip-popup').style.display='none'"
+        aria-label="Close work in progress notice"
+      >
+        ×
+      </button>
+
+      <h3>Pardon our dust.</h3>
+
+      <p>
+        The Olive Feather Co. website is still being polished.
+        Feel free to look around while I finish things up.
+      </p>
+
+    </div>
+  </div>
+
   <nav>
     <div class="brand">THE OLIVE FEATHER CO.</div>
     <a href="#shop">Shop</a>
@@ -437,20 +374,28 @@
 
   <header class="hero">
     <div class="hero-content">
+
       <h1>
-  Handmade.<br>
-  Nature-inspired.<br>
-  <em>Delightfully imperfect.</em>
+        Handmade.<br>
+        Nature-inspired.<br>
+        <em>Delightfully imperfect.</em>
       </h1>
 
-      <a class="button" href="#shop">Shop Available Pieces</a>
+      <a class="button" href="#shop">
+        Shop Available Pieces
+      </a>
 
-      <p><small>HANDCRAFTED IN OREGON</small></p>
+      <p>
+        <small>HANDCRAFTED IN OREGON</small>
+      </p>
+
     </div>
   </header>
 
   <section class="center">
+
     <div class="intro">
+
       <h2>Find the piece that is yours.</h2>
 
       <p>
@@ -461,57 +406,100 @@
       <p>
         No two pieces are quite alike — and that's rather the point.
       </p>
+
     </div>
 
     <div class="features">
+
       <div class="feature">
         <h3>Natural Stone</h3>
-        <p>Earthy stones with their own shape, pattern, and personality.</p>
+        <p>
+          Earthy stones with their own shape, pattern, and personality.
+        </p>
       </div>
 
       <div class="feature">
         <h3>Traditional Craft</h3>
-        <p>Cut, soldered, hammered, filed, shaped and finished by hand.</p>
+        <p>
+          Cut, soldered, hammered, filed, shaped and finished by hand.
+        </p>
       </div>
 
       <div class="feature">
         <h3>One of a Kind</h3>
-        <p>Small batches and original pieces made to be lived in and loved.</p>
+        <p>
+          Small batches and original pieces made to be lived in and loved.
+        </p>
       </div>
+
     </div>
   </section>
 
   <section class="products" id="shop">
+
     <h2>Available Pieces</h2>
+
     <div class="accent-line"></div>
 
     <div class="product-grid">
+
       <article class="product">
-        <div class="photo-placeholder">Product Photo</div>
+        <div class="photo-placeholder">
+          Product Photo
+        </div>
+
         <h3>Piece Coming Soon</h3>
-        <p>Handcrafted • Natural Stone</p>
-        <p><strong>$—</strong></p>
+
+        <p>
+          Handcrafted • Natural Stone
+        </p>
+
+        <p>
+          <strong>$—</strong>
+        </p>
       </article>
 
       <article class="product">
-        <div class="photo-placeholder">Product Photo</div>
+        <div class="photo-placeholder">
+          Product Photo
+        </div>
+
         <h3>Piece Coming Soon</h3>
-        <p>Handcrafted • Natural Stone</p>
-        <p><strong>$—</strong></p>
+
+        <p>
+          Handcrafted • Natural Stone
+        </p>
+
+        <p>
+          <strong>$—</strong>
+        </p>
       </article>
 
       <article class="product">
-        <div class="photo-placeholder">Product Photo</div>
+        <div class="photo-placeholder">
+          Product Photo
+        </div>
+
         <h3>Piece Coming Soon</h3>
-        <p>Handcrafted • Natural Stone</p>
-        <p><strong>$—</strong></p>
+
+        <p>
+          Handcrafted • Natural Stone
+        </p>
+
+        <p>
+          <strong>$—</strong>
+        </p>
       </article>
+
     </div>
   </section>
 
   <section class="process">
+
     <div class="story">
+
       <h2>Made the slow way.</h2>
+
       <div class="accent-line"></div>
 
       <p>
@@ -523,11 +511,14 @@
         Small variations, tool marks and organic textures aren't defects.
         They're part of what makes handmade jewelry feel alive.
       </p>
+
     </div>
   </section>
 
   <section id="story">
+
     <div class="story">
+
       <h2>Why The Olive Feather?</h2>
 
       <p>
@@ -546,20 +537,22 @@
 
       <h2>Hi, I'm Jacquline.</h2>
 
-<p>
-  I'm the hands behind The Olive Feather Co. I make each piece
-  in my small home studio in Oregon, mostly working with brass,
-  copper, and natural stone.
-</p>
+      <p>
+        I'm the hands behind The Olive Feather Co. I make each piece
+        in my small home studio in Oregon, mostly working with brass,
+        copper, and natural stone.
+      </p>
 
-<p>
-  I make jewelry for people who appreciate beautiful things
-  that don't need to be perfect to be special.
-</p>
+      <p>
+        I make jewelry for people who appreciate beautiful things
+        that don't need to be perfect to be special.
+      </p>
+
     </div>
   </section>
 
   <section class="social" id="follow">
+
     <h2>See what's being made next.</h2>
 
     <p>
@@ -569,31 +562,43 @@
 
     <div class="social-buttons">
 
-  <a
-    class="button"
-    href="https://www.instagram.com/theolivefeatherco/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Instagram
-  </a>
+      <a
+        class="button"
+        href="https://www.instagram.com/theolivefeatherco/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
 
-  <a
-    class="button"
-    href="https://www.tiktok.com/@theolivefeatherco"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    TikTok
-  </a>
+      <a
+        class="button"
+        href="https://www.tiktok.com/@theolivefeatherco"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TikTok
+      </a>
 
     </div>
   </section>
 
   <footer>
-    <p class="name">THE OLIVE FEATHER CO.</p>
-    <p>Handcrafted in Oregon</p>
-    <p><small>© 2026 The Olive Feather Co.</small></p>
+
+    <p class="name">
+      THE OLIVE FEATHER CO.
+    </p>
+
+    <p>
+      Handcrafted in Oregon
+    </p>
+
+    <p>
+      <small>
+        © 2026 The Olive Feather Co.
+      </small>
+    </p>
+
   </footer>
 
 </body>

@@ -26,3 +26,5 @@
 
 /* A lighter beige distinguishes the frame from the page background. */
 .gallery figure img{border:5mm solid #F0E7D6;box-shadow:0 0 0 1px #35453518}
+/* Warm brown-orange frames follow each organic photo contour. */
+.gallery figure img{border:7mm solid #A66B46;box-shadow:0 0 0 1px #35453518}

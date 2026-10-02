@@ -23,3 +23,6 @@
  .gallery-note{padding:28px}
  .portrait img{max-height:240px}
 }
+
+/* Beige framing follows each photograph's organic contour. */
+.gallery figure img{border:5mm solid var(--beige);box-shadow:0 0 0 1px #35453518}

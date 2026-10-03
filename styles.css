@@ -32,3 +32,5 @@
 .contact-links a{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;padding:10px;text-decoration:none;border-radius:50%}.contact-links svg{display:block;width:34px;height:34px}.contact-links a:hover{background:#f6f1e620}
 
 .site-header nav a{text-transform:uppercase}.site-header nav a[aria-current=page]{text-decoration:underline;text-underline-offset:6px}.story-page-intro{background:var(--forest);color:var(--cream);text-align:center}.story-page-intro p:last-child{margin:24px auto 0;max-width:500px}.story-back{text-align:center;padding-top:0}@media(max-width:360px){nav{gap:14px}nav a{font-size:10px;letter-spacing:.8px}}
+
+.contact-details{text-align:center}.contact-details>p{max-width:560px;margin:0 auto 24px}.contact-email{display:inline-block;font-size:clamp(1.15rem,4vw,1.8rem);overflow-wrap:anywhere;max-width:100%}.contact-details .contact-location{margin-top:30px;font-size:.95rem}.social-handles{margin-top:24px}.social-handles p{margin:8px 0;font-size:.95rem}

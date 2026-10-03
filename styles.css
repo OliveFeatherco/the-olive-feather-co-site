@@ -30,3 +30,5 @@
 .gallery figure img{border:2mm solid #A66B46;box-shadow:0 0 0 1px #35453518}
 
 .contact-links a{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;padding:10px;text-decoration:none;border-radius:50%}.contact-links svg{display:block;width:34px;height:34px}.contact-links a:hover{background:#f6f1e620}
+
+.site-header nav a{text-transform:uppercase}.site-header nav a[aria-current=page]{text-decoration:underline;text-underline-offset:6px}.story-page-intro{background:var(--forest);color:var(--cream);text-align:center}.story-page-intro p:last-child{margin:24px auto 0;max-width:500px}.story-back{text-align:center;padding-top:0}@media(max-width:360px){nav{gap:14px}nav a{font-size:10px;letter-spacing:.8px}}

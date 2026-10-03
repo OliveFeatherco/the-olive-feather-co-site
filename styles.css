@@ -28,3 +28,5 @@
 .gallery figure img{border:5mm solid #F0E7D6;box-shadow:0 0 0 1px #35453518}
 /* Warm brown-orange frames follow each organic photo contour. */
 .gallery figure img{border:2mm solid #A66B46;box-shadow:0 0 0 1px #35453518}
+
+.contact-links a{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;padding:10px;text-decoration:none;border-radius:50%}.contact-links svg{display:block;width:34px;height:34px}.contact-links a:hover{background:#f6f1e620}

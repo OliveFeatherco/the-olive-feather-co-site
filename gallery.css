@@ -1,0 +1,27 @@
+/* This chapter has its own paper mounts; shared site styles stay unchanged. */
+.makers-album main{background:#7A8A6A;color:#5B6A44}
+.makers-album .album-intro{background:#F6F1E6;text-align:center;padding:64px 7% 52px;border-bottom:1px solid #B08A4138}
+.album-sprig{display:block;width:76px;height:50px;margin:0 auto 22px;color:#B08A41}
+.album-intro h1{font-size:clamp(2.6rem,5vw,4.6rem)}
+.album-intro>p:not(.eyebrow){max-width:590px;margin:24px auto 0}
+.album-intro .album-instructions{font:12px/1.7 Arial,sans-serif;letter-spacing:.3px;opacity:.85}
+.makers-album .collection{padding:64px 6% 80px}
+.makers-album .gallery-wall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 34px;max-width:1180px;margin:0 auto;align-items:start}
+.makers-album .gallery-piece{position:relative;padding:16px 16px 42px;filter:drop-shadow(0 5px 7px #29332918)}
+.makers-album .gallery-piece::before{content:"";position:absolute;inset:0;background:#F6F1E6;clip-path:polygon(.5% .4%,29% 0,63% .5%,99.6% .2%,100% 31%,99.6% 66%,99.9% 99.5%,70% 100%,36% 99.6%,.2% 99.9%,.6% 64%,0 30%);pointer-events:none}
+.makers-album .gallery-piece:nth-child(even)::before{clip-path:polygon(.2% .7%,33% .2%,66% 0,99.4% .5%,99.9% 35%,99.6% 70%,100% 99.6%,65% 99.8%,29% 99.4%,.5% 100%,0 63%,.4% 29%)}
+.makers-album .gallery-piece:nth-child(3n)::before{clip-path:polygon(.5% 0,35% .5%,69% .2%,99.8% .6%,99.5% 32%,100% 68%,99.5% 99.7%,66% 99.4%,33% 100%,0 99.6%,.5% 66%,.2% 30%)}
+.makers-album .gallery-reveal{position:relative;display:block;width:100%;padding:0;border:0;border-radius:0;overflow:hidden;background:#F6F1E6;aspect-ratio:auto;color:#F6F1E6;font:inherit;cursor:pointer}
+.makers-album .gallery-reveal img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border:0;border-radius:0}
+.makers-album .piece-overlay{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;padding:24px;background:rgba(31,43,28,.66);opacity:0;transition:opacity .24s ease;pointer-events:none;text-align:center}
+.makers-album .piece-title{font-size:clamp(1.15rem,1.8vw,1.55rem);line-height:1.35;color:#F6F1E6;text-wrap:balance}
+.makers-album .gallery-reveal[aria-expanded="true"] .piece-overlay,.makers-album .gallery-reveal:focus-visible .piece-overlay{opacity:1}
+.makers-album .gallery-reveal:focus-visible{outline:3px solid #B08A41;outline-offset:5px}
+@media(hover:hover){.makers-album .gallery-reveal:hover .piece-overlay{opacity:1}}
+.makers-album .gallery-reveal.is-dismissed .piece-overlay{opacity:0}
+.makers-album .process{background:#F6F1E6;color:#5B6A44;border-top:1px solid #B08A4138}
+.makers-album .process .button{border-color:#B08A41}
+.makers-album .process .button:hover{background:#5B6A44;color:#F6F1E6}
+@media(max-width:950px){.makers-album .gallery-wall{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 26px}}
+@media(max-width:540px){.makers-album .gallery-wall{grid-template-columns:1fr;max-width:380px;gap:34px}.makers-album .collection{padding:38px 7% 52px}.makers-album .album-intro{padding:42px 7%}.makers-album .gallery-piece{padding:14px 14px 38px}.makers-album .piece-title{font-size:1.4rem}}
+@media(prefers-reduced-motion:reduce){.makers-album .piece-overlay{transition:none}}

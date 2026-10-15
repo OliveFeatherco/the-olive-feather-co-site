@@ -1,0 +1,13 @@
+/* Typography trial. Before-change commit: c70f7a465d5ec8d0314f0d57e69d96154c67599e.
+   Revert this commit to restore the exact pre-trial appearance. */
+body{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-size:20px;font-weight:500;line-height:1.6}
+h1{font-family:"IM Fell English",Georgia,serif;font-weight:400;letter-spacing:-.02em}
+h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}
+h1 em{font-weight:400}
+h2 em,h3 em{font-weight:600}
+.hero-description{font-size:1.25rem}
+.gallery figcaption p{font-size:1.15rem}
+.gallery figcaption h3{font-weight:600}
+.piece-title,.makers-album .piece-title{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}
+.text-link,footer>a:not(.footer-brand){font-size:1.1rem}
+@media(max-width:600px){body{font-size:19px}.hero-description{font-size:1.2rem}.gallery figcaption p{font-size:1rem;line-height:1.5}.gallery figcaption h3{font-size:clamp(1.1rem,4.6vw,1.4rem)}}

@@ -25,3 +25,6 @@
 @media(max-width:950px){.makers-album .gallery-wall{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 26px}}
 @media(max-width:540px){.makers-album .gallery-wall{grid-template-columns:1fr;max-width:380px;gap:34px}.makers-album .collection{padding:38px 7% 52px}.makers-album .album-intro{padding:42px 7%}.makers-album .gallery-piece{padding:14px 14px 38px}.makers-album .piece-title{font-size:1.4rem}}
 @media(prefers-reduced-motion:reduce){.makers-album .piece-overlay{transition:none}}
+
+/* Show only the olive branch from the supplied two-part artwork. */
+.makers-album .album-branch{display:block;width:110px;aspect-ratio:1024/682;margin:0 auto 24px;background:#5B6A44;-webkit-mask-image:url("images/olive-feather-artwork.png");mask-image:url("images/olive-feather-artwork.png");-webkit-mask-size:200% 100%;mask-size:200% 100%;-webkit-mask-position:left center;mask-position:left center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}

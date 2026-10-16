@@ -58,3 +58,6 @@
 
 /* The supplied Lightning illustration has two quiet homes. */
 .duck-visit{display:flex;flex-direction:column;align-items:center;gap:14px;padding:38px 6% 42px;background:var(--cream);color:var(--forest);text-align:center}.duck-visit>a:first-child{display:block;width:140px;max-width:100%}.duck-visit img{display:block;width:100%;height:auto}.brand-story .story-duck{width:210px;height:auto;max-height:none;object-fit:contain}@media(max-width:600px){.duck-visit>a:first-child{width:120px}.brand-story .story-duck{width:180px}}
+
+/* Lightning quietly occupies the social section corner, without a link. */
+.homepage-duck{display:block;width:110px;height:auto;max-width:100%;margin:24px 0 -32px auto;pointer-events:none;user-select:none}@media(max-width:600px){.homepage-duck{width:90px;margin-top:20px;margin-bottom:-20px}}

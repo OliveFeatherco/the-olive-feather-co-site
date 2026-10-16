@@ -55,3 +55,6 @@
 
 /* Supplied Olive Feather wordmarks, scaled without cropping. */
 .site-header .brand{display:block;flex-shrink:0;width:min(380px,100%);max-width:100%}.brand-wordmark{display:block;width:100%;height:auto;aspect-ratio:auto}.footer-brand{display:block;width:min(440px,100%);margin:0 auto 22px}.footer-wordmark{display:block;width:100%;height:auto;aspect-ratio:auto}@media(max-width:600px){.site-header .brand{width:min(340px,100%)}.footer-brand{width:min(340px,100%)}}
+
+/* The supplied Lightning illustration has two quiet homes. */
+.duck-visit{display:flex;flex-direction:column;align-items:center;gap:14px;padding:38px 6% 42px;background:var(--cream);color:var(--forest);text-align:center}.duck-visit>a:first-child{display:block;width:140px;max-width:100%}.duck-visit img{display:block;width:100%;height:auto}.brand-story .story-duck{width:210px;height:auto;max-height:none;object-fit:contain}@media(max-width:600px){.duck-visit>a:first-child{width:120px}.brand-story .story-duck{width:180px}}

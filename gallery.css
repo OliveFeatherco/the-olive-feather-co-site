@@ -27,4 +27,4 @@
 @media(prefers-reduced-motion:reduce){.makers-album .piece-overlay{transition:none}}
 
 /* Show only the olive branch from the supplied two-part artwork. */
-.makers-album .album-branch{display:block;width:110px;aspect-ratio:1024/682;margin:0 auto 24px;background:#5B6A44;-webkit-mask-image:url("images/olive-feather-artwork.png");mask-image:url("images/olive-feather-artwork.png");-webkit-mask-size:200% 100%;mask-size:200% 100%;-webkit-mask-position:left center;mask-position:left center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+.makers-album .album-branch{display:block;width:110px;aspect-ratio:1024/682;margin:0 auto 24px;background:#5B6A44;-webkit-mask-image:url("images/olive-feather-artwork-verified.png");mask-image:url("images/olive-feather-artwork-verified.png");-webkit-mask-size:200% 100%;mask-size:200% 100%;-webkit-mask-position:left center;mask-position:left center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}

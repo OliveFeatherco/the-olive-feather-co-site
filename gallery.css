@@ -1,4 +1,4 @@
-/* This chapter has its own paper mounts; shared site styles stay unchanged. */
+/* Album-specific styles preserve the shared site branding. */
 .makers-album main{background:#F6F1E6;color:#5B6A44}
 .makers-album .album-intro{background:#F6F1E6;text-align:center;padding:64px 7% 52px;border-bottom:1px solid #B08A4138}
 .album-sprig{display:block;width:76px;height:50px;margin:0 auto 22px;color:#B08A41}
@@ -8,13 +8,13 @@
 .makers-album .collection{padding:28px 6% 64px}
 .makers-album .gallery-wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:1180px;margin:0 auto;align-items:start}
 .makers-album .gallery-piece{position:relative;min-width:0;padding:0;filter:drop-shadow(0 2px 3px #29332912)}
-/* Fine grid rows pack the full photographs together without fixed-height crops.
-   Without JavaScript, the same photographs remain in a normal responsive grid. */
+/* Each course fits full photographs to a shared height. Landscape positions
+   shift between courses so the vertical joins interlock like brickwork. */
+.makers-album .gallery-course{display:contents}
 @media(min-width:951px){
-  .makers-album .gallery-wall.is-collage{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:1px;grid-auto-flow:row dense;column-gap:8px;row-gap:0}
-  .makers-album .is-collage .gallery-piece{padding-top:var(--stagger,0px)}
-  .makers-album .is-collage .gallery-piece:nth-child(3n+2){--stagger:2px}
-  .makers-album .is-collage .gallery-piece.is-landscape{grid-column:span 2}
+  .makers-album .gallery-wall.is-brickwork{display:flex;flex-direction:column;gap:8px}
+  .makers-album .is-brickwork .gallery-course{display:flex;width:100%;gap:8px;align-items:flex-start}
+  .makers-album .is-brickwork .gallery-piece{flex:var(--photo-ratio) 1 0}
 }
 .makers-album .gallery-reveal{position:relative;display:block;width:100%;padding:0;border:0;border-radius:0;overflow:hidden;background:#F6F1E6;aspect-ratio:auto;color:#F6F1E6;font:inherit;cursor:pointer}
 .makers-album .gallery-reveal img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border:0;border-radius:0}
